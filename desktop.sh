@@ -19,5 +19,9 @@ fi
 
 apt-get update
 apt-get install ntp vim nmap tcpdump oracle-jdk7-installer dnsutils fish postfix openvpn htop iotop bwm-ng git gitk subversion nodejs maven -y --no-install-recommends
+# set fish sell default shell
+sed -i 's/\/bin\/sh/\/usr\/bin\/fish/g' /etc/passwd
+sed -i 's/\/bin\/bash/\/usr\/bin\/fish/g' /etc/passwd
+
 apt-get purge nano -y
 apt-get purge openjdk* -y
