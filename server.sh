@@ -12,9 +12,9 @@ apt-get install python-software-properties -y
 
 if [ "Debian" = "$OS" ]
 then
-	wget https://raw.github.com/mjasion/linux-stuff/master/repo/debian-repo.sh -q -O - | sudo sh
+	wget https://raw.github.com/mjasion/linux-stuff/master/repo/debian-repo.sh -q -O - | sh
 else
-	wget https://raw.github.com/mjasion/linux-stuff/master/repo/ubuntu-repo.sh -q -O - | sudo sh
+	wget https://raw.github.com/mjasion/linux-stuff/master/repo/ubuntu-repo.sh -q -O - | sh
 fi
 
 apt-get update
