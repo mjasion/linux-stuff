@@ -18,6 +18,6 @@ else
 fi
 
 apt-get update
-apt-get install ntp vim nmap postgresql-9.3 mariadb-server mongodb-10gen tcpdump oracle-jdk7-installer dnsutils fish postfix nginx-extras openvpn htop iotop bwm-ng git gitk subversion nodejs jenkins maven -y
+apt-get install ntp vim nmap tcpdump oracle-jdk7-installer dnsutils fish postfix openvpn htop iotop bwm-ng git gitk subversion nodejs jenkins maven -y --no-install-recommends
 apt-get purge nano 
 apt-get purge openjdk*
