@@ -33,8 +33,8 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 - subversion 
 - nodejs 
 - maven
-- ~~wireshark~~
-- ~~Sublime Text~~
+- wireshark
+- Sublime Text
 
 ### server.sh
 - ntp 
