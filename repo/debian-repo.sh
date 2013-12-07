@@ -43,3 +43,15 @@ rm /etc/apt/sources.list.d/git.list
 echo "deb http://ppa.launchpad.net/git-core/ppa/ubuntu saucy main" >> /etc/apt/sources.list.d/git.list
 echo "deb-src http://ppa.launchpad.net/git-core/ppa/ubuntu saucy main" >> /etc/apt/sources.list.d/git.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E1DF1F24 
+
+#wireshark
+rm /etc/apt/sources.list.d/wireshark.list
+echo "deb http://ppa.launchpad.net/dreibh/ppa/ubuntu saucy main" >> /etc/apt/sources.list.d/wireshark.list
+echo "deb-src http://ppa.launchpad.net/dreibh/ppa/ubuntu saucy main " >> /etc/apt/sources.list.d/wireshark.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 916C56E0  
+
+#sublime 3
+rm /etc/apt/sources.list.d/wireshark.list
+echo "http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu saucy main " >> /etc/apt/sources.list.d/wireshark.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu saucy main " >> /etc/apt/sources.list.d/wireshark.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  
