@@ -24,5 +24,8 @@ apt-get install openssh-server ntp vim nmap postgresql-9.3 mariadb-server mongod
 sed -i 's/\/bin\/sh/\/usr\/bin\/fish/g' /etc/passwd
 sed -i 's/\/bin\/bash/\/usr\/bin\/fish/g' /etc/passwd
 
+# changing ntp.conf
+sudo wget https://raw.github.com/mjasion/linux-stuff/master/repo/ubuntu-repo.sh -q -O /etc/ntp.conf 
+
 apt-get purge nano -y 
 apt-get purge openjdk* -y
