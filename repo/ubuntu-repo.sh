@@ -32,7 +32,7 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 rm /etc/apt/sources.list.d/fish-shell.list
 echo 'deb http://ppa.launchpad.net/fish-shell/release-2/ubuntu saucy main' >> /etc/apt/sources.list.d/fish-shell.list
 echo 'deb-src http://ppa.launchpad.net/fish-shell/release-2/ubuntu saucy main' >> /etc/apt/sources.list.d/fish-shell.list
-apt-key adv --keyserver keyserver.ubuntu.com --recv-key D880C8E4
+apt-key adv --keyserver keyserver.ubuntu.com --recv-key 6DC33CA5 
 
 # node.js
 rm /etc/apt/sources.list.d/nodejs.list
