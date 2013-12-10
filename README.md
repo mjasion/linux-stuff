@@ -16,7 +16,7 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 
 ## Packages
 ### desktop.sh
-- ntp 
+- ntp + config with servers localized in Warsaw
 - vim 
 - nmap 
 - tcpdump 
@@ -37,7 +37,7 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 - Sublime Text
 
 ### server.sh
-- ntp 
+- ntp + config with servers localized in Warsaw
 - vim 
 - nmap 
 - postgresql-9.3 
