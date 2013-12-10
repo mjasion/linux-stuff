@@ -59,3 +59,10 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 - nodejs 
 - jenkins 
 - maven
+
+## Fish config
+
+My configuration file for fishshell. GitPrompt configured with http://mariuszs.github.io/ settings :)
+
+#####Example
+![](http://i.imgur.com/LiUx4lr.png)
