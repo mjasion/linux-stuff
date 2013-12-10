@@ -1,8 +1,8 @@
 linux-stuff
 ===========
-Scripts to automate installation on Debian/Ubuntu/Linux Mint
+Scripts to automate installation on Debian/Ubuntu/Linux Mint and other stuff :)
 
-## USAGE
+## usage
 Server:
 
 ```bash
@@ -14,7 +14,7 @@ Desktop:
 wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo sh
 ```
 
-## Packages
+## packages
 ### desktop.sh
 - fish - set also for all user as default
 - ntp + config with servers localized in Warsaw
