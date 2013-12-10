@@ -16,13 +16,13 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 
 ## Packages
 ### desktop.sh
+- fish - set also for all user as default
 - ntp + config with servers localized in Warsaw
 - vim 
 - nmap 
 - tcpdump 
 - Oracle Java 7 
 - dnsutils 
-- fish 
 - postfix 
 - openvpn 
 - htop 
@@ -37,6 +37,7 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 - Sublime Text
 
 ### server.sh
+- fish - set also for all user as default
 - ntp + config with servers localized in Warsaw
 - vim 
 - nmap 
@@ -46,7 +47,6 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 - tcpdump 
 - oracle-jdk7-installer 
 - dnsutils 
-- fish 
 - postfix 
 - nginx-extras 
 - openvpn 
