@@ -63,6 +63,6 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 ## Fish config
 
 My configuration file for fishshell. GitPrompt configured with http://mariuszs.github.io/ settings :)
-
+I have added this to file: /usr/share/fish/config.fish (ubuntu)
 #####Example
-![](http://i.imgur.com/LiUx4lr.png)
+![](http://i.imgur.com/SQhjGpg.png)

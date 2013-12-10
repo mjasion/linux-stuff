@@ -71,3 +71,12 @@ if not set -q __prompt_initialized_2
 	set -U fish_color_host cyan 
 	set -U __prompt_initialized_2 
 end
+
+function fish_right_prompt -d "Write out the right prompt"
+
+  # Time
+  set_color -o black
+  echo (date +%R)
+  set_color $fish_color_normal
+
+end
