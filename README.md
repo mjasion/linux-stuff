@@ -65,7 +65,7 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 
 My configuration file for fishshell. GitPrompt configured with http://mariuszs.github.io/ settings :)
 
-HINT: I have added this to file: `/usr/share/fish/config.fish (ubuntu)`. 
+HINT: I have added this to file: `/usr/share/fish/config.fish`(ubuntu). 
 If you will add this to `.config/fish/config.fish`, then other users will use default configuration
 
 #####Example
