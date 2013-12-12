@@ -70,4 +70,4 @@ HINT: I have added this to file: `/usr/share/fish/config.fish`(ubuntu).
 If you will add this to `.config/fish/config.fish`, then other users will use default configuration
 
 #####Example
-![](http://i.imgur.com/SQhjGpg.png)
+![](http://i.imgur.com/WWASu2r.png)
