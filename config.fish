@@ -54,7 +54,7 @@ function fish_prompt --description 'Write out the prompt'
 	end
 
 	switch $USER 
-		case root; set fish_color_user red
+		case root; set fish_color_user red --bold
 	end
 
 	if not set -q __fish_prompt_cwd 
