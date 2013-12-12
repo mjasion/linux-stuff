@@ -30,6 +30,7 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 - bwm-ng 
 - git 
 - gitk
+- gitg
 - subversion 
 - nodejs 
 - maven

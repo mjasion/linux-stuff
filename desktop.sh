@@ -18,7 +18,7 @@ else
 fi
 
 apt-get update
-apt-get install openssh-server ntp vim nmap tcpdump oracle-jdk7-installer dnsutils fish postfix openvpn htop iotop bwm-ng git gitk subversion nodejs maven curl whois wireshark sublime-text-installer -y --no-install-recommends
+apt-get install openssh-server ntp vim nmap tcpdump oracle-jdk7-installer dnsutils fish postfix openvpn htop iotop bwm-ng git gitk gitg subversion nodejs maven curl whois wireshark sublime-text-installer -y --no-install-recommends
 
 # set fish sell default shell
 sed -i 's/\/bin\/sh/\/usr\/bin\/fish/g' /etc/passwd
