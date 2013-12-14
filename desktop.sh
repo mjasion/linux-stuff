@@ -19,6 +19,7 @@ fi
 
 apt-get update
 apt-get install openssh-server ntp vim nmap tcpdump oracle-jdk7-installer dnsutils fish postfix openvpn htop iotop bwm-ng git gitk gitg subversion nodejs maven curl whois wireshark sublime-text-installer -y --no-install-recommends
+apt-get install fonts-cantarell lmodern ttf-aenigma ttf-georgewilliams ttf-bitstream-vera ttf-sjfonts ttf-tuffy tv-fonts ubuntustudio-font-meta ttf-sil-gentium fonts-dustin ttf-georgewilliams ttf-sjfonts ttf-larabie-deco ttf-larabie-straight ttf-larabie-uncommon ttf-larabie-deco ttf-larabie-straight ttf-larabie-uncommon ttf-aenigma msttcorefonts -y
 
 # set fish sell default shell
 sed -i 's/\/bin\/sh/\/usr\/bin\/fish/g' /etc/passwd
