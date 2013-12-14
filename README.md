@@ -36,6 +36,7 @@ wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo
 - maven
 - wireshark
 - Sublime Text
+- fonts
 
 ### server.sh
 - fish - set also for all user as default
