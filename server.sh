@@ -25,7 +25,7 @@ sed -i 's/\/bin\/sh/\/usr\/bin\/fish/g' /etc/passwd
 sed -i 's/\/bin\/bash/\/usr\/bin\/fish/g' /etc/passwd
 
 # changing ntp.conf
-wget https://raw.github.com/mjasion/linux-stuff/master/repo/ubuntu-repo.sh -q -O /etc/ntp.conf 
+wget https://github.com/mjasion/linux-stuff/blob/master/etc/ntp.conf -q -O /etc/ntp.conf 
 
 apt-get purge nano -y 
 apt-get purge openjdk* -y
