@@ -51,7 +51,7 @@ echo "deb-src http://ppa.launchpad.net/dreibh/ppa/ubuntu saucy main " >> /etc/ap
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 916C56E0  
 
 #sublime 3
-rm /etc/apt/sources.list.d/sublime.list
-echo "http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu saucy main " >> /etc/apt/sources.list.d/sublime.list
-echo "deb-src http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu saucy main " >> /etc/apt/sources.list.d/sublime.list
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  
+#rm /etc/apt/sources.list.d/sublime.list
+#echo "http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu saucy main " >> /etc/apt/sources.list.d/sublime.list
+#echo "deb-src http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu saucy main " >> /etc/apt/sources.list.d/sublime.list
+#apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  
