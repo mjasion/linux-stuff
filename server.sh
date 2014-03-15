@@ -30,8 +30,9 @@ echo "Update & Instal"
 apt-get update
 apt-get purge nano -y 
 apt-get dist-upgrade -y
+apt-get install oracle-java8-installer -y
 #apt-get install openssh-server ntp vim nmap postgresql-9.3 mongodb-10gen tcpdump oracle-jdk7-installer dnsutils fish curl whois postfix nginx-extras fail2ban openvpn htop iotop bwm-ng git gitk subversion nodejs jenkins maven -y --no-install-recommends -t jessie
-apt-get install openssh-server ntp vim nmap tcpdump dnsutils fish curl whois postfix nginx-extras openvpn htop iotop bwm-ng git gitk subversion nodejs fail2ban maven -y --no-install-recommends -t jessie
+apt-get install openssh-server ntp vim nmap tcpdump dnsutils fish curl whois postfix nginx-extras openvpn htop iotop bwm-ng git gitk subversion nodejs fail2ban maven -y --no-install-recommends
 
 # set fish sell default shell
 sed -i 's/\/bin\/sh/\/usr\/bin\/fish/g' /etc/passwd

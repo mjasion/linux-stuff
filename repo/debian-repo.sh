@@ -2,12 +2,12 @@
 # Marcin Jasion
 
 # set default repository stable
-echo "APT::Default-Release "stable";" >> /etc/apt/apt.conf
+# echo "APT::Default-Release "stable";" >> /etc/apt/apt.conf
 
-echo "deb http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy main contrib non-free" > /etc/apt/sources.list
-echo "deb-src http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy main contrib non-free" >> /etc/apt/sources.list
-echo "" >> /etc/apt/sources.list
-echo "deb http://ftp.icm.edu.pl/pub/Linux/debian/ jessie main contrib non-free" >> /etc/apt/sources.list
+# echo "deb http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy main contrib non-free" > /etc/apt/sources.list
+# echo "deb-src http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy main contrib non-free" >> /etc/apt/sources.list
+# echo "" >> /etc/apt/sources.list
+echo "deb http://ftp.icm.edu.pl/pub/Linux/debian/ jessie main contrib non-free" > /etc/apt/sources.list
 echo "deb-src http://ftp.icm.edu.pl/pub/Linux/debian/ jessie main contrib non-free" >> /etc/apt/sources.list
 echo "" >> /etc/apt/sources.list
 echo "deb http://security.debian.org/ wheezy/updates main contrib non-free" >> /etc/apt/sources.list
