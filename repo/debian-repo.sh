@@ -1,6 +1,22 @@
 #!/bin/sh
 # Marcin Jasion
 
+# set default repository stable
+echo "APT::Default-Release "stable";" >> /etc/apt/apt.conf
+
+echo "deb http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy main contrib non-free" > /etc/apt/sources.list
+echo "deb-src http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy main contrib non-free" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "deb http://ftp.icm.edu.pl/pub/Linux/debian/ jessie main contrib non-free" >> /etc/apt/sources.list
+echo "deb-src http://ftp.icm.edu.pl/pub/Linux/debian/ jessie main contrib non-free" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "deb http://security.debian.org/ wheezy/updates main contrib non-free" >> /etc/apt/sources.list
+echo "deb-src http://security.debian.org/ wheezy/updates main contrib non-free" >> /etc/apt/sources.list
+echo "" >> /etc/apt/sources.list
+echo "# wheezy-updates, previously known as 'volatile'" >> /etc/apt/sources.list
+echo "deb http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy-updates main" >> /etc/apt/sources.list
+echo "deb-src http://ftp.icm.edu.pl/pub/Linux/debian/ wheezy-updates main" >> /etc/apt/sources.list
+
 # oracle java
 rm /etc/apt/sources.list.d/oracle-java.list
 echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu saucy main" >> /etc/apt/sources.list.d/oracle-java.list
