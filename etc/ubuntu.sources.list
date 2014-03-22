@@ -1,0 +1,15 @@
+#############################################################
+################### OFFICIAL UBUNTU REPOS ###################
+#############################################################
+
+###### Ubuntu Main Repos
+deb http://pl.archive.ubuntu.com/ubuntu/ saucy main restricted universe 
+deb-src http://pl.archive.ubuntu.com/ubuntu/ saucy main restricted universe 
+
+###### Ubuntu Update Repos
+deb http://pl.archive.ubuntu.com/ubuntu/ saucy-security main restricted universe 
+deb http://pl.archive.ubuntu.com/ubuntu/ saucy-updates main restricted universe 
+deb http://pl.archive.ubuntu.com/ubuntu/ saucy-proposed main restricted universe 
+deb-src http://pl.archive.ubuntu.com/ubuntu/ saucy-security main restricted universe 
+deb-src http://pl.archive.ubuntu.com/ubuntu/ saucy-updates main restricted universe 
+deb-src http://pl.archive.ubuntu.com/ubuntu/ saucy-proposed main restricted universe 

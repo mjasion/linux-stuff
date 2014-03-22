@@ -1,6 +1,10 @@
 #!/bin/sh
 # Marcin Jasion
 
+CODE_NAME=`lsb_release -c -s`
+wget https://raw.githubusercontent.com/mjasion/linux-stuff/master/etc/ubuntu.sources.list -q -O - > /etc/apt/sources.list
+sed -i "s/saucy/$CODE_NAME/g" /etc/apt/sources.list
+
 # oracle java
 rm /etc/apt/sources.list.d/oracle-java.list
 echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" >> /etc/apt/sources.list.d/oracle-java.list

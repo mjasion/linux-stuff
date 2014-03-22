@@ -38,6 +38,9 @@ apt-get install openssh-server ntp vim nmap tcpdump dnsutils fish curl whois pos
 sed -i 's/\/bin\/sh/\/usr\/bin\/fish/g' /etc/passwd
 sed -i 's/\/bin\/bash/\/usr\/bin\/fish/g' /etc/passwd
 
+sed -i 's/DSHELL=\/bin\/sh/DSHELL=\/usr\/bin\/fish/g' /etc/adduser.conf
+sed -i 's/DSHELL=\/bin\/bash/DSHELL=\/usr\/bin\/fish/g' /etc/adduser.conf
+
 # changing ntp.conf
 wget https://raw.github.com/mjasion/linux-stuff/master/etc/ntp.conf -q -O /etc/ntp.conf 
 
