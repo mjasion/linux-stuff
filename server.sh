@@ -20,7 +20,7 @@ then
 	echo "Adding debian repositories"
 	wget https://raw.github.com/mjasion/linux-stuff/master/repo/debian-repo.sh -q -O - | sh
 else
-	echo "Adding debian repositories"
+	echo "Adding ubuntu repositories"
 	wget https://raw.github.com/mjasion/linux-stuff/master/repo/ubuntu-repo.sh -q -O - | sh
 fi
 
