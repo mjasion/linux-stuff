@@ -13,6 +13,7 @@ Desktop:
 ```bash
 wget https://raw.github.com/mjasion/linux-stuff/master/desktop.sh -q -O - | sudo sh
 ```
+http://www.webupd8.org/2014/02/get-unity-global-menu-hud-support-for.html
 
 ## packages
 ### desktop.sh
