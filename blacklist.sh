@@ -7,8 +7,23 @@ fi
 
 ipset create blackips iphash -quiet
 ipset create blacknets nethash -quiet
-iptables -A INPUT -m set --match-set blackips src -j DROP
-iptables -A INPUT -m set --match-set blacknets src -j DROP
+
+for ip in `ipset list blackips | grep -E "^[1-9]"`; do
+  ipset del blackips $ip -q
+done
+
+for ip in `ipset list blacknets |grep -E "^[1-9]"`; do
+  ipset del blacknets $ip -q
+done
+
+if [ -z "`iptables-save | grep blacknets`" ]; then
+  echo "dupa"
+  iptables -I INPUT -m set --match-set blacknets src -j DROP
+fi
+if [ -z "`iptables-save | grep blackips`" ]; then
+  echo dupa2
+  iptables -I INPUT -m set --match-set blackips src -j DROP
+fi
 
 BLOCKDB="block.txt"
 WORKDIR="/tmp"
@@ -19,6 +34,7 @@ rm $BLOCKDB
 
 ## Obtain List of badguys from openbl.org
 wget -q -O- http://www.openbl.org/lists/base.txt | grep -Ev "^#" > $BLOCKDB
+wget -q -O- http://lists.blocklist.de/lists/all.txt | grep -E "^[1-9]" >> $BLOCKDB
 wget -q -O- http://www.ciarmy.com/list/ci-badguys.txt | grep -Ev "^#" >> $BLOCKDB
 wget -q -O- http://feeds.dshield.org/top10-2.txt | grep -E "^[1-9]" | cut -f1 >> $BLOCKDB
 wget -q -O- http://feeds.dshield.org/block.txt | grep -E "^[1-9]" | cut -f1,3 | sed "s/\t/\//g" >> $BLOCKDB
