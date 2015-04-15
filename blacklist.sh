@@ -17,11 +17,9 @@ for ip in `ipset list blacknets |grep -E "^[1-9]"`; do
 done
 
 if [ -z "`iptables-save | grep blacknets`" ]; then
-  echo "dupa"
   iptables -I INPUT -m set --match-set blacknets src -j DROP
 fi
 if [ -z "`iptables-save | grep blackips`" ]; then
-  echo dupa2
   iptables -I INPUT -m set --match-set blackips src -j DROP
 fi
 
